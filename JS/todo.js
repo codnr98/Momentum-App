@@ -12,12 +12,12 @@ function saveToDos() {
 function deleteToDo(event) {
     const li = event.target.parentElement; //click한 버튼의 event정보에서 target.parentElement를 li함수에 입력 
     li.remove(); //해당 li 삭제
-    toDos = toDos.filter((item) => item.id !== parseInt(li.id));
+    toDos = toDos.filter((item) => item.id !== +li.id);
     //filter를 사용해서 지운 li와 id가 같은 item은 제외하고 나머지 item을 toDos array에 재입력한다.
     saveToDos(); // saveToDos function을 사용해서 localstorage에 다시 저장한다.
 }
 
-    
+
 function paintToDo(newToDo) {
     const li = document.createElement("li"); // li Element를 만들어준다
     li.id = newToDo.id; //li tag에 id 할당

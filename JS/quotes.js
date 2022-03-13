@@ -52,7 +52,7 @@ const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
 
-//Maht random() * 10 을 사용하면 숫자를 랜덤으로 반환한다 옆에 * 10을 붙이면 0에서 10까지 숫자중에서 랜덤으로 반환한다.
+//Math random() * 10 을 사용하면 숫자를 랜덤으로 반환한다 옆에 * 10을 붙이면 0에서 10까지 숫자중에서 랜덤으로 반환한다.
 //Math round() 괄호안의 숫자를 정수로 바꿔준다. ex) 1.4 => 1, 3.4 => 3, 3.6 => 4, 3.9 => 4 반올림
 //Math ceil() 괄호안의 숫자를 정수로 바꿔준다. ex) 1.2 => 2, 5.9 => 6 올림
 //Math floor() 괄호안의 숫자를 정수로 바꿔준다. ex) 1.2 => 1, 1.9 => 1 내림

@@ -10,4 +10,5 @@ const bgImage = document.createElement("img"); // createElement()는 html tag를
 
 bgImage.src = `img/${chosenImage}`; // 위에서 만든 tag에 src를 넣는다.
 
-document.body.appendChild(bgImage); //JS에서 만든 html tag를 html의 <body>로 보낸다.
+// document.body.appendChild(bgImage);
+ //JS에서 만든 html tag를 html의 <body>로 보낸다.
